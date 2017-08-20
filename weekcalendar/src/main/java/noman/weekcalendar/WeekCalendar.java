@@ -140,7 +140,7 @@ public class WeekCalendar extends LinearLayout {
         daysName.setNumColumns(7);
 
         daysName.setAdapter(new BaseAdapter() {
-            private String[] days = getWeekDayNames();
+            private String[] days = getResources().getStringArray(R.array.dayNames);
 
             public int getCount() {
                 return days.length;
